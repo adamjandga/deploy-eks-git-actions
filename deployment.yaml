@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app
+  name: resume-sample
   labels:
-    app: app
+    app: resume-sample
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app
+      app: resume-sample
   template:
     metadata:
       labels:
-        app: app
+        app: resume-sample
     spec:
       containers:
-        - name: app
-          image: 718511862771.dkr.ecr.us-east-2.amazonaws.com/app:1.1
+        - name: resume-sample
+          image: 718511862771.dkr.ecr.us-east-2.amazonaws.com/resume-sample:1.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
