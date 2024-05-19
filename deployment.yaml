@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: resume-sample
-          image: 718511862771.dkr.ecr.us-east-2.amazonaws.com/resume-sample:1.1
+          image: 718511862771.dkr.ecr.us-east-1.amazonaws.com/resume-sample:1.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
